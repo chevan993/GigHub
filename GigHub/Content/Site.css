@@ -23,6 +23,11 @@ textarea {
     max-width: 280px;
 }
 
+.field-validation-error {
+    color: red;
+}
+
+
 
 /* BOOTSTRAP OVERRIDES */
 
@@ -87,5 +92,9 @@ h6,
 
 .btn {
     font-size: 17px;
-    padding 8px 20px;
+    padding: 8px 20px;
+}
+
+p {
+    margin-top: 15px;
 }
