@@ -28,9 +28,9 @@ namespace GigHub.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel viewModel)
         {
-            var errors = ModelState.Values.SelectMany(v => v.Errors);
             if (!ModelState.IsValid) {
                 viewModel.Genres = _context.Genres.ToList();
                 return View("Create", viewModel);
