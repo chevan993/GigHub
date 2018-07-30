@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 20px;
 }
 
@@ -27,7 +27,27 @@ textarea {
     color: red;
 }
 
+.voffset {
+    margin-top: 2px;
+}
 
+.voffset-2 {
+    margin-top: 5px;
+}
+
+.voffset-3 {
+    margin-top: 10px;
+}
+
+.voffset-4 {
+    margin-top: 20px;
+}
+.voffset-5 {
+    margin-top: 50px;
+}
+.voffset-6 {
+    margin-top: 100px;
+}
 
 /* BOOTSTRAP OVERRIDES */
 
