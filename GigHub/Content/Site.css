@@ -107,7 +107,7 @@ h6,
 
 .form-control {
     font-size: 17px;
-    padding: 20px 15px;
+    height: 44px;
 }
 
 .btn {
@@ -163,4 +163,13 @@ p {
 
 .gigs > li .details .genre {
     font-size: 14px;
+}
+
+.gigs > li .actions {
+    font-size: 14px;
+    display: none;
+}
+
+.gigs > li:hover .actions {
+    display: block;
 }
