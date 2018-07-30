@@ -36,8 +36,8 @@ body {
 }
 
 .navbar-inverse {
-    background-color: #ff4342;
-    border-color: #ff4342;
+    background-color: #D60100;
+    border-color: #D60100;
 }
 
 .navbar-brand {
@@ -91,8 +91,8 @@ h6,
 }
 
 .btn {
-    font-size: 17px;
-    padding: 8px 20px;
+    /*font-size: 17px;
+    padding: 8px 20px;*/
 }
 
 p {
