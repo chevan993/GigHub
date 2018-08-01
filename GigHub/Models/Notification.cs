@@ -11,7 +11,7 @@ namespace GigHub.Models
         public int Id { get; private set; }
         public DateTime DateTime { get; private set; }
         public NotificationType Type { get; private set; }
-        public DateTime? OriginalDateTime { get; set; }
+        public DateTime OriginalDateTime { get; set; }
         public string OriginalVenue { get; set; }
 
         [Required]
