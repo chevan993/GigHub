@@ -27,15 +27,11 @@ namespace GigHub.Models
 
         public UserNotification(ApplicationUser user, Notification notification)
         {
-            if(user == null)
-            {
+            if (user == null)
                 throw new ArgumentNullException("user");
-            }
 
-            if(notification == null)
-            {
+            if (notification == null)
                 throw new ArgumentNullException("notification");
-            }
 
             User = user;
             Notification = notification;

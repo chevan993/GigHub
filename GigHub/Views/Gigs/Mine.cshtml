@@ -27,7 +27,7 @@
                 <div class="actions">
                     <a href="@Url.Action("Edit", "Gigs", new { id = gig.Id })">
                         Edit
-                    </a> | 
+                    </a> |
                     <a href="#" class="js-cancel-gig" data-gig-id="@gig.Id">
                         Cancel
                     </a>
@@ -46,6 +46,7 @@
 
                 bootbox.dialog({
                     message: "Are you sure you want to cancel this gig?",
+                    title: "Confirm",
                     buttons: {
                         no: {
                             label: "No",
@@ -55,7 +56,7 @@
                             }
                         },
                         yes: {
-                            label: "Cancel Gig",
+                            label: "Yes",
                             className: "btn-danger",
                             callback: function () {
                                 $.ajax({
@@ -73,8 +74,8 @@
                             }
                         }
                     }
-                })
+                });
             });
         });
-    </script>    
+    </script>
 }

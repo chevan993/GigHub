@@ -11,24 +11,41 @@ namespace GigHub.Models
         public int Id { get; private set; }
         public DateTime DateTime { get; private set; }
         public NotificationType Type { get; private set; }
-        public DateTime OriginalDateTime { get; set; }
-        public string OriginalVenue { get; set; }
+        public DateTime? OriginalDateTime { get; private set; }
+        public string OriginalVenue { get; private set; }
 
         [Required]
         public Gig Gig { get; set; }
 
         protected Notification() {}
 
-        public Notification(Gig gig, NotificationType type)
+        private Notification(Gig gig, NotificationType type)
         {
             if (gig == null)
-            {
                 throw new ArgumentNullException("gig");
-            }
 
-            Gig = gig;
             Type = type;
+            Gig = gig;
             DateTime = DateTime.Now;
+        }
+
+        public static Notification GigCreated(Gig gig)
+        {
+            return new Notification(gig, NotificationType.GigCreated);
+        }
+
+        public static Notification GigUpdated(Gig newGig, DateTime originalDateTime, string originalVenue)
+        {
+            var notification = new Notification(newGig, NotificationType.GigCreated);
+            notification.OriginalDateTime = originalDateTime;
+            notification.OriginalVenue = originalVenue;
+
+            return notification;
+        }
+
+        public static Notification GigCanceled(Gig gig)
+        {
+            return new Notification(gig, NotificationType.GigCanceled);
         }
     }
 }

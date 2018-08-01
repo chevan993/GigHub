@@ -266,6 +266,10 @@
     <Compile Include="Migrations\201807311343440_AddNotification.Designer.cs">
       <DependentUpon>201807311343440_AddNotification.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808012153575_AddNullableDateTimeToNotification.cs" />
+    <Compile Include="Migrations\201808012153575_AddNullableDateTimeToNotification.Designer.cs">
+      <DependentUpon>201808012153575_AddNullableDateTimeToNotification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Following.cs" />
@@ -390,6 +394,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807311343440_AddNotification.resx">
       <DependentUpon>201807311343440_AddNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808012153575_AddNullableDateTimeToNotification.resx">
+      <DependentUpon>201808012153575_AddNullableDateTimeToNotification.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
