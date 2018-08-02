@@ -83,6 +83,11 @@ namespace GigHub.Controllers
             return View("GigForm", viewModel);
         }
 
+        public ActionResult Search(GigsViewModel viewModel)
+        {
+            return RedirectToAction("Index", "Home", new { query = viewModel.SearchTerm });
+        }
+
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]

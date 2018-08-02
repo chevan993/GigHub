@@ -4,6 +4,19 @@
 }
 
 <h1>@Model.Heading</h1>
+
+@using (Html.BeginForm("Search", "Gigs"))
+{
+    <div class="form-group">
+        <div id="searchGigs" class="input-group">
+            @Html.TextBoxFor(m => m.SearchTerm, new { @class = "form-control", placeholder = "Search by artist, genre..." })
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-search"></i>
+            </span>
+        </div>
+    </div>
+}
+
 <ul class="gigs voffset-4">
     @foreach (var gig in Model.UpcomingGigs)
     {
@@ -26,17 +39,18 @@
                     @if (Model.ShowActions)
                     {
                         <button class="btn btn-link btn-sm js-toggle-following" data-user-id="@gig.ArtistId">Follow</button>
-        }
+                    }
                 </span>
                 <span class="genre">
                     @gig.Genre.Name
                 </span>
-                @if (Model.ShowActions && !gig.IsCanceled) {
+                @if (Model.ShowActions && !gig.IsCanceled)
+                {
                     <button data-gig-id="@gig.Id" class="btn btn-default btn-sm pull-right js-toggle-attendance">Going?</button>
                 }
             </div>
         </li>
-    }
+        }
 </ul>
 
 
