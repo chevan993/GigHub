@@ -71,6 +71,17 @@ body {
     color: #fff;
 }
 
+navbar-inverse .notifications {
+    position: relative;
+}
+
+#notification-badge {
+    position: absolute;
+    top: 8px;
+    right: -1px;
+    background: #a80a0a;
+}
+
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
 }
@@ -108,11 +119,6 @@ h6,
 .form-control {
     font-size: 17px;
     height: 44px;
-}
-
-.btn {
-    /*font-size: 17px;
-    padding: 8px 20px;*/
 }
 
 p {
