@@ -179,3 +179,21 @@ p {
 .gigs > li:hover .actions {
     display: block;
 }
+
+.notification-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.notification-list > li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.notification-list > li:last-child {
+    border-bottom: none;
+}
+
+.highlight {
+    font-weight: bold;
+}

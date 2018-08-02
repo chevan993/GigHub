@@ -1,0 +1,193 @@
+﻿/* Set padding to keep content from hitting the edges */
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+/* Set width on the form input elements since they're 100% wide by default */
+/* BOOTSTRAP OVERRIDES */
+body {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 17px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.dl-horizontal dt {
+  white-space: normal;
+}
+input {
+  max-width: 280px;
+}
+select {
+  max-width: 280px;
+}
+textarea {
+  max-width: 280px;
+}
+.field-validation-error {
+  color: red;
+}
+.voffset {
+  margin-top: 2px;
+}
+.voffset-2 {
+  margin-top: 5px;
+}
+.voffset-3 {
+  margin-top: 10px;
+}
+.voffset-4 {
+  margin-top: 20px;
+}
+.voffset-5 {
+  margin-top: 50px;
+}
+.voffset-6 {
+  margin-top: 100px;
+}
+.navbar-inverse {
+  background-color: #ff4342;
+  border-color: #ff4342;
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > .open > a {
+  color: #ffffff;
+  background-color: rgba(205, 40, 39, 0.55);
+}
+.navbar-inverse .navbar-nav > .open > a:hover {
+  color: #ffffff;
+  background-color: rgba(205, 40, 39, 0.55);
+}
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: rgba(205, 40, 39, 0.55);
+}
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+navbar-inverse .notifications {
+  position: relative;
+}
+#notification-badge {
+  position: absolute;
+  top: 8px;
+  right: -1px;
+  background: #a80a0a;
+}
+h1 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+h2 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.h1 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.h2 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control {
+  font-size: 17px;
+  height: 44px;
+}
+p {
+  margin-top: 15px;
+}
+.gigs {
+  list-style: none;
+}
+.gigs > li {
+  position: relative;
+  margin-bottom: 30px;
+}
+.gigs > li .date {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  width: 60px;
+  border-radius: 8px;
+}
+.gigs > li .date .month {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 6px;
+}
+.gigs > li .date .day {
+  background-color: #f7f7f7;
+  color: #333;
+  font-size: 20px;
+  padding: 6px 12px;
+}
+.gigs > li .details {
+  position: absolute;
+  top: 0;
+  left: 70px;
+}
+.gigs > li .details .artist {
+  font-weight: bold;
+  display: block;
+}
+.gigs > li .details .genre {
+  font-size: 14px;
+}
+.gigs > li .actions {
+  font-size: 14px;
+  display: none;
+}
+.gigs > li:hover .actions {
+  display: block;
+}
+.notification-list {
+  list-style: none;
+  padding-left: 0;
+}
+.notification-list > li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.notification-list > li:last-child {
+  border-bottom: none;
+}
+.highlight {
+  font-weight: bold;
+}
