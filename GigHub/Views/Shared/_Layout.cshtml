@@ -80,9 +80,11 @@
                     return;
                 }
 
-                $(".js-notifications-count")
+                var notificationBadge = $(".js-notifications-count");
+                notificationBadge
                     .text(notifications.length)
                     .removeClass("hide");
+
                 $(".notifications").popover({
                     html: true,
                     title: "Notifications",
@@ -91,11 +93,15 @@
                         return compiled({ notifications: notifications });
                     },
                     placement: "bottom"
+                }).on("shown.bs.popover", function () {
+                    $.post("/api/notifications/MarkAsRead")
+                        .done(function () {
+                            notificationBadge
+                                .text("")
+                                .addClass("hide");
+                        });
                 });
             });
-
-            var element = $(".notifications")
-
         });
     </script>
 </body>
