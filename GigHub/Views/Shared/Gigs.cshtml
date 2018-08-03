@@ -35,7 +35,7 @@
                     {
                         <span class="label label-danger">Canceled</span>
                     }
-                    @gig.Artist.Name
+                    <a href="@Url.Action("Details", "Gigs", new { id = gig.Id })">@gig.Artist.Name</a>
                     @if (Model.ShowActions)
                     {
                         <button class="btn btn-link btn-sm js-toggle-following" data-user-id="@gig.ArtistId">Follow</button>
