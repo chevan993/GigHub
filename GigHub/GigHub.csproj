@@ -317,6 +317,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\SiteOld.css" />
+    <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\Controllers\followingController.js" />
+    <Content Include="Scripts\app\Controllers\gigsController.js" />
+    <Content Include="Scripts\app\Services\attendanceService.js" />
+    <Content Include="Scripts\app\Services\followingService.js" />
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
