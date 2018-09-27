@@ -7,7 +7,7 @@ using System.Web;
 
 namespace GigHub.Repositories
 {
-    public class GigRepository
+    public class GigRepository : IGigRepository
     {
         private ApplicationDbContext _context;
 
@@ -16,7 +16,7 @@ namespace GigHub.Repositories
             _context = context;
         }
 
-        public IEnumerable<Gig> GetGigsUserAttending(string userId)
+        public IEnumerable<Gig> GetGigUserAttending(string userId)
         {
             return _context.Attendances
                 .Where(a => a.AttendeeId == userId)

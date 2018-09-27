@@ -7,7 +7,7 @@ using System.Web;
 
 namespace GigHub.Repositories
 {
-    public class FollowingRepository
+    public class FollowingRepository : IFollowingRepository
     {
         private ApplicationDbContext _context;
 
