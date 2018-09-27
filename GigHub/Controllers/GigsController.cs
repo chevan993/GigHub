@@ -111,7 +111,7 @@ namespace GigHub.Controllers
                 Venue = viewModel.Venue
             };
 
-            _gigRepository.AddGig(gig);
+            _gigRepository.Add(gig);
 
             return RedirectToAction("Mine", "Gigs");
         }
