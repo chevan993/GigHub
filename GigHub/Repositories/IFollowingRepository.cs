@@ -10,5 +10,6 @@ namespace GigHub.Repositories
     public interface IFollowingRepository
     {
         Following GetFollowing(string artistId, string userId);
+        IEnumerable<ApplicationUser> GetFollowees(string userId);
     }
 }

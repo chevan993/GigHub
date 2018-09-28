@@ -45,6 +45,7 @@ namespace GigHub.Repositories
         {
             return _context.Gigs
                 .Where(g => g.ArtistId == userId && g.DateTime > DateTime.Now && !g.IsCanceled)
+                .Include(g => g.Artist)
                 .Include(g => g.Genre)
                 .ToList();
         }
