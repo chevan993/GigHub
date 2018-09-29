@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Data.Entity;
 using GigHub.Persistence;
+using System.Security.Principal;
 
 namespace GigHub.Controllers.Api
 {
@@ -20,6 +21,8 @@ namespace GigHub.Controllers.Api
         {
             _unitOfWork = unitOfWork;
         }
+
+        public GenericPrincipal User { get; set; }
 
         [HttpDelete]
         public IHttpActionResult Cancel(int id)
