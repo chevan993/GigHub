@@ -19,7 +19,7 @@ namespace GigHub.Repositories
         public Following GetFollowing(string artistId, string userId)
         {
             return _context.Followings
-                .Single(f => f.FolloweeId == artistId && f.FollowerId == userId);
+                .SingleOrDefault(f => f.FolloweeId == artistId && f.FollowerId == userId);
         }
 
         public IEnumerable<ApplicationUser> GetFollowees(string userId)
@@ -28,6 +28,16 @@ namespace GigHub.Repositories
                 .Where(f => f.FollowerId == userId)
                 .Select(a => a.Followee)
                 .ToList();
+        }
+
+        public void Add(Following following)
+        {
+            _context.Followings.Add(following);
+        }
+
+        public void Remove(Following following)
+        {
+            _context.Followings.Remove(following);
         }
     }
 }

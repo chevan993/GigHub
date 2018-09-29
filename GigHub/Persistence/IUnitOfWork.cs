@@ -13,6 +13,8 @@ namespace GigHub.Persistence
         IAttendanceRepository Attendances { get; }
         IGenreRepository Genres { get; }
         IFollowingRepository Followings { get; }
+        INotificationRepository Notifications { get; }
+        IUserNotificationRepository UserNotifications { get; }
         void Complete();
     }
 }

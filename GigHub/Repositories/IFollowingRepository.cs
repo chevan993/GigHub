@@ -11,5 +11,9 @@ namespace GigHub.Repositories
     {
         Following GetFollowing(string artistId, string userId);
         IEnumerable<ApplicationUser> GetFollowees(string userId);
+        void Add(Following following);
+        void Remove(Following following);
+
+
     }
 }
